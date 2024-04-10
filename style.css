@@ -100,7 +100,7 @@ a:hover {
   background-color: white;
   width: fit-content;
   max-height: 0;
-  overflow: hidden;
+  overflow:scroll;
   transition: all 0.3 ease-in-out;
 }
 
@@ -211,6 +211,23 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+.skill-icon {
+  cursor: pointer;
+  height: 1.2rem;
+}
+
+.project-article-container {
+  height: 300px;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.2rem;
 }
 
 /* BUTTONS */
