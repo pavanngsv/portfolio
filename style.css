@@ -17,7 +17,6 @@ html {
 
 p {
   color: rgb(85, 85, 85);
-  text-align: justify;
 }
 
 /* TRANSITION */
@@ -385,6 +384,10 @@ article .icon {
   font-size: small;
 }
 
+.about-description{
+  text-align: justify;
+}
+
 /* EDUCATION SECTION */
 
 #education {
@@ -444,10 +447,6 @@ color: rgb(85, 85, 85)
 .education-icon {
   cursor: pointer;
   height: 4rem;
-}
-
-.edu-timeline{
-  text-align: center;
 }
 
 
