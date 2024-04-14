@@ -331,6 +331,10 @@ article .icon {
   margin: auto 0;
 }
 
+.about-description{
+  text-align: justify;
+}
+
 /* EDUCATION SECTION */
 
 #education {
