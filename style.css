@@ -395,6 +395,10 @@ color: rgb(85, 85, 85)
   height: 4rem;
 }
 
+.edu-timeline{
+  text-align: center;
+}
+
 
 .education-section-container {
   gap: 4rem;
@@ -544,7 +548,7 @@ display: inline-block;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.7rem;
   justify-content: space-around;
 }
 
