@@ -354,7 +354,7 @@ article .icon {
 
 .education-containers,
 .education-details-container {
-  display: block;
+  display: flex;
   row-gap: 2rem;
 }
 
@@ -371,6 +371,7 @@ article .icon {
   border-color: rgb(163, 163, 163);
   text-align: center;
   margin-bottom: 24px;
+  align-content: center;
 }
 
 h4{
@@ -403,6 +404,22 @@ color: rgb(85, 85, 85)
 .education-section-container {
   gap: 4rem;
   height: 80%;
+}
+
+.course-work {
+  padding-left: 4%;
+  text-align: left; 
+  
+}
+
+.course {
+  font-weight: bold;
+}
+
+.tech {
+  font-weight: normal;
+  font-size: small;
+  font-style: italic;
 }
 
 /*EXPERIENCE SECTION */
