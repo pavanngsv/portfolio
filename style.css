@@ -224,7 +224,6 @@ article .icon {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -245,7 +244,7 @@ section {
 .arrow {
   position: absolute;
   right: -5rem;
-  bottom: 2.5rem;
+  bottom: 1.5rem;
 }
 
 /* PROFILE SECTION */
@@ -349,9 +348,7 @@ section {
 }
 
 @media (min-width: 768px) {
-  .skillset-details-container2 {
-    flex-basis: calc(27% - 10px);
-  }
+
 
 .article-container {
   display: flex;
@@ -429,7 +426,6 @@ article .icon {
   margin: 5px;
 }
 
-@media (min-width: 768px) {
   .skillset-details-container2 {
     flex-basis: calc(27% - 10px);
   }
