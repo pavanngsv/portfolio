@@ -76,11 +76,15 @@
   article {
     font-size: 0.8rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     max-width: 7rem;
   }
   article div{
     text-align: left;
+  }
+
+  article div p {
+    display: none;
   }
   .education-icon{
     height: 4rem;
