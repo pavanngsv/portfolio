@@ -11,7 +11,13 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
+  section {
+    padding-top: 4vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
   #desktop-nav {
     display: none;
   }

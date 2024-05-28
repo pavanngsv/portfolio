@@ -225,6 +225,7 @@ article .icon {
 section {
   padding-top: 4vh;
   margin: 0 10rem;
+  height: 96vh;
   box-sizing: border-box;
   min-height: fit-content;
 }
