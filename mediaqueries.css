@@ -1,37 +1,16 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
-
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   section {
     padding-top: 4vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
   }
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
+
   #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
-  #profile,
-  .section-container {
-    display: block;
-  }
+  
   .arrow {
     display: none;
   }
@@ -52,7 +31,20 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .icon {
     cursor: pointer;
     height: 2rem;
@@ -66,6 +58,7 @@
   footer {
     height: 40vh;
   }
+
   #profile {
     margin-bottom: 0;
   }

@@ -548,13 +548,6 @@ color: rgb(85, 85, 85)
 /*EXPERIENCE SECTION */
 
 #experience {
-  padding-top: 4vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-}
-
-#experience {
   position: relative;
 }
 
