@@ -225,9 +225,8 @@ article .icon {
 section {
   padding-top: 4vh;
   margin: 0 10rem;
-  height: 96vh;
   box-sizing: border-box;
-  min-height: fit-content;
+  min-height: 96vh;
 }
 
 .section-container {
@@ -256,7 +255,7 @@ section {
   gap: 5rem;
   position: relative;
   align-items: center;
-  height: 84vh;
+  min-height: 84vh !important;
 }
 
 .about{
@@ -712,7 +711,7 @@ display: inline-block;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  min-height: 70vh !important;
 }
 
 .contact-details-container {
