@@ -7,15 +7,23 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   </head>
   <body>
+
+    <a href="#" class="scrolltop" id="scroll-top" aria-label="Chevron-Up">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+
     <nav id="desktop-nav">
       <div class="logo">PavanKumar Nakka</div>
       <div>
         <ul class="nav-links">
           <li><a href="#skillset">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <!--<li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>-->
+          <li><a href="#timeline">Education/Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -31,13 +39,15 @@
         </div>
         <div class="menu-links">
           <li><a href="#skillset" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <!--<li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>-->
+          <li><a href="#timeline" onclick="toggleMenu()">Education/Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+    
     <section id="profile">
       <div class = "about">
         <div class="section__text">
@@ -49,7 +59,7 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('./assets/PavanKumar_Nakka_Resume.pdf')"
+              onclick="window.open('./assets/PavanKumar_Nakka_DataAnalyst.pdf')"
             >
               View CV
             </button>
@@ -78,15 +88,15 @@
         <p class="about-description">
               I am a dedicated data enthusiast with a strong passion for transforming data into actionable insights that drive strategic decisions. Pursuing a Master of Business Analytics and Information Management at the University of Delaware, I have honed my skills in data analysis, statistical modeling, and machine learning.<br><br>
               My professional background includes roles in software testing, and application development, where I led projects to enhance efficiency and quality. These experiences have equipped me with the ability to manage complex datasets and implement innovative data-driven solutions.<br><br>
-              I am actively seeking <strong>Fall'24 Co-Op / Full-time opportunities in data analytics</strong> to leverage my skills and passion for data to solve real-world problems. If you are looking for a committed data professional to enhance your team, let's connect and explore potential collaborations.
+              I am actively seeking <strong>Full-time opportunities in data analytics</strong> to leverage my skills and passion for data to solve real-world problems. If you are looking for a committed data professional to enhance your team, let's connect and explore potential collaborations.
         </p>
       </div>
-      <img
+      <!--<img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#skillset'"
-      />
+      />-->
     </section>
 
     <section id="skillset">
@@ -95,156 +105,138 @@
       <div class="skillset-details-container">
         <div class="skillset-containers">
           <div class="skillset-details-container2">
-            <h2 class="skillset-sub-title">Programming Languages & Libraries</h2>
+            <h2 class="skillset-sub-title">Programming Languages</h2>
+            <div class="skills__grid-image">
+              <img src="assets/img/logo/python-icon.svg" alt="Python Icon" title="Python" class="skills__img" />
+              <img src="assets/img/logo/R_logo.svg.png" alt="R Icon" title="R" class="skills__img" />
+              <img src="assets/img/logo/sas.svg" alt="sas Icon" title="SAS" class="skills__img" />
+              <img src="assets/img/logo/logo.svg" alt="SQL Icon" title="SQL" class="skills__img" />
+              <img src="assets/img/logo/postgresql.png" alt="PostgreSQL" title="PostgreSQL" class="skills__img" />
+              <img src="assets/img/logo/html5.svg" alt="HTML" title="HTML" class="skills__img" />
+              <img src="assets/img/logo/css3-seeklogo.com.svg" alt="CSS" title="CSS" class="skills__img" />
+            </div>
+          </div>
+
+          <div class="skillset-details-container2">
+            <h2 class="skillset-sub-title">Libraries</h2>
+            <div class="skills__grid-image">
+              <img src="assets/img/logo/numpy.svg" alt="Numpy Icon" title="Numpy" class="skills__img" />
+              <img src="assets/img/logo/pandas.svg" alt="Pandas Icon" title="Pandas" class="skills__img" />
+              <img src="assets/img/logo/matplotlib-1.svg" alt="Matplotlib Icon" title="Matplotlib" class="skills__img" />
+              <img src="assets/img/logo/Dplyr.png" alt="Dplyr Icon" title="Dplyr" class="skills__img" />
+              <img src="assets/img/logo/tidyr.png" alt="Tidyr Icon" title="Tidyr" class="skills__img" />
+              <img src="assets/img/logo/ggplot.png" alt="GGplot" title="ggplot2" class="skills__img" />
+              <img src="assets/img/logo/shinyr.png" alt="Shinyr" title="Shinyr" class="skills__img" />
+            </div>
+          </div>
+
+          <div class="skillset-details-container2">
+            <h2 class="skillset-sub-title">ETL & BI Tools</h2>
+            <div class="skills__grid-image">
+              <img src="assets/img/logo/alteryx-with-text.png" alt="Alteryx Icon" title="Alteryx" class="skills__img" />
+              <img src="assets/img/logo/Microsoft-Power-BI-Symbol.png" alt="PowerBI Icon" title="PowerBI" class="skills__img" />
+              <img src="assets/img/logo/tableau-software.svg" alt="Tableau Icon" title="Tableau" class="skills__img" />
+              <img src="assets/img/logo/qlik-sense-seeklogo.svg" alt="QlikSense Icon" title="QlikSense" class="skills__img" />
+            </div>
+          </div>
+
+          <div class="skillset-details-container2">
+            <h2 class="skillset-sub-title">Tools</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Python</h3>
+                  <span class="skill">Microsoft Excel</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">R</h3>
+                  <span class="skill">Microsoft Word</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">SAS</h3>
+                  <span class="skill">Microsoft Access</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">SQL</h3>
+                  <span class="skill">RStudio</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">HTML</h3>
+                  <span class="skill">GIT</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">CSS</h3>
+                  <span class="skill">JIRA</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">PowerBI DAX</h3>
+                  <span class="skill">TestRail</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">NumPy</h3>
+                  <span class="skill">VS Code</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Pandas</h3>
+                  <span class="skill">Google Colab</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Matplotlib</h3>
+                  <span class="skill">Google Suite</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Seaborn</h3>
+                  <span class="skill">Jupyter Notebooks</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">GGPlot2</h3>
+                  <span class="skill">Selenium WebDriver</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Shinyr</h3>
+                  <span class="skill">Microsoft Azure DevOps</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Dplyr</h3>
+                  <span class="skill">BrowserStack</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Lubridate</h3>
+                  <span class="skill">PostMan</span>
+                </div>
+              </article>
+              <article>
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
+                <div>
+                  <span class="skill">Confluence</span>
                 </div>
               </article>
             </div>
@@ -253,373 +245,196 @@
             <h2 class="skillset-sub-title">Methodologies & Software Testing</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">SDLC</h3>
+                  <span class="skill">SDLC</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Agile Methodologies</h3>
+                  <span class="skill">Agile Methodologies</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Work Breakdown Structure (WBS)</h3>
+                  <span class="skill">Work Breakdown Structure (WBS)</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Capacity Planning</h3>
+                  <span class="skill">Capacity Planning</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Sprint Planning</h3>
+                  <span class="skill">Sprint Planning</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">User Stories</h3>
+                  <span class="skill">User Stories</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">STLC</h3>
+                  <span class="skill">STLC</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Defect Life Cycle</h3>
+                  <span class="skill">Defect Life Cycle</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Test Planning</h3>
+                  <span class="skill">Test Planning</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">RTM</h3>
+                  <span class="skill">RTM</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Test Cases</h3>
+                  <span class="skill">Test Cases</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Manual Testing</h3>
+                  <span class="skill">Manual Testing</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Test Automation</h3>
+                  <span class="skill">Test Automation</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Smoke Testing</h3>
+                  <span class="skill">Smoke Testing</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">Sanity Testing</h3>
+                  <span class="skill">Sanity Testing</span>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
+                <img src="assets/next.png" alt="Experience icon" class="skill-icon" />
                 <div>
-                  <h3 class="skill">User Acceptance Testing</h3>
+                  <span class="skill">User Acceptance Testing</span>
                 </div>
               </article>
             </div>
           </div>
-          <div class="skillset-details-container2">
-            <h2 class="skillset-sub-title">Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Microsoft PowerBI</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Alteryx Designer</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Qlik Sense</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Microsoft Excel</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Microsoft Word</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Microsoft Access</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">RStudio</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">GIT</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">JIRA</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">TestRail</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">VS Code</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Google Colab</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Google Suite</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Jupyter Notebooks</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Selenium WebDriver</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Microsoft Azure DevOps</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">BrowserStack</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">PostMan</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/next.png"
-                  alt="Experience icon"
-                  class="skill-icon"
-                />
-                <div>
-                  <h3 class="skill">Confluence</h3>
-                </div>
-              </article>
+      <!--<img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#timeline'"
+      />--> 
+    </section>
+
+
+  <section id="timeline">
+    <p class="section__text__p1">Get To Know More about my</p>
+    <div class="details">
+      <div class="education">
+        <h1 class="title">Education</h1>
+        <div class="education-section-container">
+          <div class="education-details-container">
+            <div class="education-containers">
+              <div class="education-details-container2">
+                <img src="./assets/UniversityofDelawareLogo.jpg" alt="Education icon" class="education-icon" />
+                <h2 class="detail-title">MS in Business Analytics and Information Management</h2>
+                <h4>University of Delaware,</h4> <h5>Newark, DE</h5>
+                <p class="timeperiod">Feb 2023 - Present</p>
+              </div>
+              <div class="education-details-container2">
+                <img src="./assets/aditya.jpeg" alt="Education icon" class="education-icon"/>
+                <h2 class="detail-title">B.Tech in Mechanical Engineering</h2>
+                <h4>Aditya Engineering College,</h4> <h5>Surampalem, AP, India</h5>
+                <p class="timeperiod">Aug 2012 - Apr 2016</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <img
+
+      <div class = "experience">
+        <h1 class="title">Experience</h1>
+        <div class="experience-section-container">
+          <div class="experience-details-container">
+            <div class="experience-containers">
+              <div class="experience-details-container2">
+                <div class = "experience-details">
+                  <h2 class="detail-title">Graduate Teaching Assistant - Data Modelling</h2>
+                  <p class="timeperiod">Aug 2024 - present</p>
+                </div>
+                <div class="experience-location">
+                  <h3>University of Delaware,</h3> 
+                  <p class="location">Newark, DE</p>
+                </div>
+              </div>
+              <div class="experience-details-container2">
+                <div class = "experience-details">
+                  <h2 class="detail-title">Graduate Teaching Assistant - Big Data Analytics</h2>
+                  <p class="timeperiod">Feb 2024 - May 2024</p>
+                </div>
+                <div class="experience-location">
+                  <h3>University of Delaware,</h3> 
+                  <p class="location">Newark, DE</p>
+                </div>
+              </div>
+              <div class="experience-details-container2">
+                <div class = "experience-details">
+                  <h2 class="detail-title">Application Development Team Lead</h2>
+                  <p class="timeperiod">Mar 2021 - Jan 2023</p>
+                </div>
+                <div class="experience-location">
+                  <h3>Accenture,</h3> 
+                  <p class="location">Hyderabad, India</p>
+                </div>
+              </div>
+              <div class="experience-details-container2">
+                <div class = "experience-details">
+                  <h2 class="detail-title">Software Engineer - QA</h2>
+                  <p class="timeperiod">Jun 2016 - Mar 2021</p>
+                </div>
+                <div class="experience-location">
+                  <h3>Technovert Solutions,</h3> 
+                  <p class="location">Hyderabad, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<img
       src="./assets/arrow.png"
       alt="Arrow icon"
       class="icon arrow"
-      onclick="location.href='./#education'"
-    /> 
+      onclick="location.href='./#projects'"
+    />-->
     </section>
 
-    <section id="education">
+ <!--<section id="education">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About My Education</h1>
       <div class="education-section-container">
@@ -667,9 +482,9 @@
         onclick="location.href='./#experience'"
       />
     </section>
-  </section>
+  </section>-->
 
-  <section id="experience">
+  <!--<section id="experience">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title";">About My Work Experience</h1>
     <div class="experience-section-container">
@@ -677,7 +492,22 @@
         <div class="experience-containers">
           <div class="experience-details-container2">
             <div class = "experience-details">
-              <h2>Graduate Teaching Assistant</h2>
+              <h2>Graduate Teaching Assistant - Database Design & Implementation</h2>
+              <p class="timeline">Aug 2024 - present</p>
+            </div>
+            <div class="experience-location">
+              <h3>University of Delaware,</h3> 
+              <p class="location">Newark, DE</p>
+            </div>
+            <p class="aligned-left">
+              I instructed undergraduate and graduate students in Data Analytics using Microsoft PowerBI, aiding their comprehension of business intelligence tools. Additionally, 
+              I assisted in leading technical training sessions and evaluating assignments to ensure students' grasp of key concepts.
+              Collaborating with professors, I contributed to the development of course materials, enhancing the overall learning experience for students. 
+            </p>
+          </div>
+          <div class="experience-details-container2">
+            <div class = "experience-details">
+              <h2>Graduate Teaching Assistant - Big Data Analytics</h2>
               <p class="timeline">Feb 2024 - May 2024</p>
             </div>
             <div class="experience-location">
@@ -724,7 +554,7 @@
       class="icon arrow"
       onclick="location.href='./#projects'"
     />
-    </section>
+    </section>-->
     
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -831,26 +661,30 @@
           </div>
         </div>
       </div>
-      <img
+      <!--<img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
-      />
+      />-->
     </section>
 
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+      <div class="contact-box">
         <div class="contact-details-container">
           <div class="contact-details">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon"
-            />
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+            <p><a href="mailto:pavann@udel.edu">pavann@udel.edu</a></p>
+          </div>
+          <div class="contact-details">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
             <p><a href="mailto:pavan.ngsv@gmail.com">pavan.ngsv@gmail.com</a></p>
           </div>
+        </div>
+
+        <div class="contact-details-container">
           <div class="contact-details">
             <img
               src="./assets/linkedin.png"
@@ -859,6 +693,9 @@
             />
             <p><a href="https://www.linkedin.com/in/pavankumar-ngsv/">LinkedIn</a></p>
           </div>
+        </div>
+
+        <div class="contact-details-container">
           <div class="contact-details">
             <img
               src="./assets/kisspng-computer-icons-telephone-call-symbol-phone-vector-5ad050946903f3.3287647915236015564302.png"
@@ -868,20 +705,39 @@
             <p><a href="callto:+1(302)543-1166">+1(302)543-1166</a></p>
           </div>
         </div>
+      </div>
+
+        <form action="https://formsubmit.co/pavan.ngsv@gmail.com" method="POST" class="contact__form">
+          <div class="contact__inputs">
+            <input type="text" name="name" placeholder="Name" class="contact__input" />
+            <input type="email" name="email" placeholder="Email" class="contact__input" />
+          </div>
+
+          <div class="contact__inputs">
+            <input type="text" name="organization" placeholder="Organization" class="contact__input" />
+            <input type="number" name="number" placeholder="Number" class="contact__input" />
+          </div>
+
+          <textarea name="message" id="" cols="0" rows="5" placeholder="Message" class="contact__input"></textarea>
+
+          <input type="submit" value="Send Message" class="btn btn-color-2 project-btn" />
+        </form>
+      </div>
     </section>
 
     <footer>
-      <nav>
+      <footer-nav>
         <div class="nav-links-container">
-          <ul class="nav-links">
+          <ul class="footer-nav-links">
             <li><a href="#skillset">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <!--<li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>-->
+            <li><a href="#timeline">Education/Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </nav>
+      </footer-nav>
       <p>Copyright &#169; 2024 PavanKumar. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
