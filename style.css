@@ -969,15 +969,15 @@ display: inline-block;
 .contact__input {
   width: 674px;
   padding: 12px;
-  border: 2px solid gray;
-  color: black;
+  border: 0.1rem solid;
+  border-color: rgb(163, 163, 163);
   border-radius: 1.2rem;
   margin-bottom: 1rem;
 }
 
 .contact::placeholder {
   color: #786f71;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .contact__form {
