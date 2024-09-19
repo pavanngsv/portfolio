@@ -12,9 +12,9 @@ Screenshots attached below:
 
 Desktop View:
 
-![Capture_PersonalPortfolio_HomePage.PNG]()
+![Capture_PersonalPortfolio_HomePage.PNG](https://github.com/pavanngsv/portfolio/blob/main/assets/LandingPage.png)
 
-![Capture_PersonalPortfolio_ProjectsPage.PNG]()
+![Capture_PersonalPortfolio_ProjectsPage.PNG](https://github.com/pavanngsv/portfolio/blob/main/assets/Projects.png)
 
 
 Mobile View:
